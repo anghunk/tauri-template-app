@@ -9,7 +9,9 @@
       "Bash(dir:*)",
       "Bash(npm run tauri:*)",
       "Bash(cargo clean:*)",
-      "Bash(npm config:*)"
+      "Bash(npm config:*)",
+      "Bash(npm run check:*)",
+      "Bash(npm run build:*)"
     ]
   }
 }
