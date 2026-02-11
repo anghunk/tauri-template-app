@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(rustup update:*)",
+      "Bash(npx tailwindcss init:*)",
+      "Bash(del:*)",
+      "Bash(npm update:*)"
+    ]
+  }
+}
