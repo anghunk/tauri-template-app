@@ -5,7 +5,10 @@
       "Bash(rustup update:*)",
       "Bash(npx tailwindcss init:*)",
       "Bash(del:*)",
-      "Bash(npm update:*)"
+      "Bash(npm update:*)",
+      "Bash(dir:*)",
+      "Bash(npm run tauri:*)",
+      "Bash(cargo clean:*)"
     ]
   }
 }
