@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "tauri-template-app",
-  "version": "0.1.0",
-  "identifier": "com.tauri-template.vue",
+  "version": "0.0.1",
+  "identifier": "com.tauri-template-app",
   "build": {
     "beforeDevCommand": "npm run dev",
     "beforeBuildCommand": "npm run build",
@@ -12,13 +12,15 @@
   "app": {
     "security": {
       "csp": null,
-      "capabilities": ["default"]
+      "capabilities": [
+        "default"
+      ]
     },
     "windows": [
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "Tauri Template App",
+        "title": "tauri-template-app",
         "width": 800,
         "height": 600
       }
@@ -26,7 +28,9 @@
   },
   "bundle": {
     "active": true,
-    "targets": ["nsis"],
+    "targets": [
+      "nsis"
+    ],
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
@@ -36,8 +40,25 @@
     ],
     "windows": {
       "nsis": {
-        "installMode": "both"
+        "installMode": "both",
+        "languages": [
+          "SimpChinese"
+        ],
+        "installerIcon": "icons/icon.ico",
+        "displayLanguageSelector": true
+      },
+      "webviewInstallMode": {
+        "type": "embedBootstrapper"
       }
+    }
+  },
+  "plugins": {
+    "shell": {
+      "open": true
+    },
+    "tray": {
+      "iconPath": "icons/32x32.png",
+      "iconAsTemplate": true
     }
   }
 }
